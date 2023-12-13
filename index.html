@@ -38,8 +38,8 @@
             <div class="container">
                 <div class="row ">
                     <div class="col-12 d-flex justify-content-center">
-                        <input class="w-50 mx-1 form-control form-control-sm" type="text" placeholder="Aggiungi qualcosa da fare alla lista" aria-label=".form-control-sm example">
-                        <button type="button" class="mx-1 btn btn-outline-light">Aggiungi</button>
+                        <input class="w-50 mx-1 form-control form-control-sm" type="text" placeholder="Aggiungi qualcosa da fare alla lista" aria-label=".form-control-sm example" v-model="newText">
+                        <button type="button" class="mx-1 btn btn-outline-light" @click="addText()">Aggiungi</button>
                     </div>
                     
                     </div>

@@ -3,6 +3,7 @@ let { createApp } = Vue
 createApp({
     data(){
         return{
+            newText: "",
             todoList:[
                 {
                     text: "Preparare il pranzo",
@@ -31,6 +32,13 @@ createApp({
     methods:{
         removeText(index){
             this.todoList.splice(index,1)
+        },
+        addText(){
+            this.todoList.push({
+                text: this.newText,
+                done: false
+            })
+            this.newText = ""
         }
     }
 }).mount("#app")
