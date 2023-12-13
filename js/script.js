@@ -10,7 +10,7 @@ createApp({
                 },
                 {
                     text: "Pulire il soggiorno",
-                    done: false
+                    done: true
                 },
                 {
                     text: "Andare alle poste",
@@ -29,6 +29,6 @@ createApp({
         }
     },
     methods(){
-        
+
     }
 }).mount("#app")
