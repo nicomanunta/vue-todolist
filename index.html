@@ -10,26 +10,43 @@
 </head>
 <body>
     <div id="app">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 d-flex justify-content-center">
-                    <ul class="list-group list-group-flush my-5 w-50 ">
-                        <li v-for="text,index in todoList" :key="index" class="list-group-item d-flex justify-content-between" :class="text.done == true ? 'sbarrato' : ''">
-                            <div>
-                                <span>
-                                    {{text.text}}
-                                </span>
-                            </div>
-                            <div>
-                                <button type="button" class="btn btn-danger" @click="removeText(index)"><i class="fa-solid fa-x" style="color: #ffffff;"></i></button>
-                            </div>
-                        </li>   
-
-                    </ul>
+        <header>
+            <h1 class="text-center mt-3 fw-bold">Cose da fare oggi</h1>
+        </header>
+        <main>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                        <ul class="list-group list-group-flush my-5 w-50">
+                            <li v-for="text,index in todoList" :key="index" class="list-group-item d-flex justify-content-between" :class="text.done == true ? 'sbarrato' : ''">
+                                <div>
+                                    <span>
+                                        {{text.text}}
+                                    </span>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn btn-danger" @click="removeText(index)"><i class="fa-solid fa-x" style="color: #ffffff;"></i></button>
+                                </div>
+                            </li>   
+    
+                        </ul>
+                    
+                    </div>
                 </div>
             </div>
-        </div>
-        
+            <div class="container">
+                <div class="row ">
+                    <div class="col-12 d-flex justify-content-center">
+                        <input class="w-50 mx-1 form-control form-control-sm" type="text" placeholder="Aggiungi qualcosa da fare alla lista" aria-label=".form-control-sm example">
+                        <button type="button" class="mx-1 btn btn-outline-light">Aggiungi</button>
+                    </div>
+                    
+                    </div>
+                </div>
+            </div>
+            
+        </main>
         
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
