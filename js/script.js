@@ -39,6 +39,7 @@ createApp({
                 done: false
             })
             this.newText = ""
-        }
+        },
+     
     }
 }).mount("#app")

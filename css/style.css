@@ -7,7 +7,7 @@
     text-decoration: line-through;
 }
 main{
-    background-color: green;
+    background-color: rgb(1, 91, 1);
     height: 100vh;
 }
 h1{
@@ -15,5 +15,8 @@ h1{
     font-family: 'Montserrat', sans-serif;
 }
 body{
-    background-color: rgba(0, 128, 0, 0.434);
+    background-color: rgba(1, 91, 1, 0.407);
+}
+li{
+    cursor: pointer;
 }
